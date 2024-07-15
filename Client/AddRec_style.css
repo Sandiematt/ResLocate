@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: medium;
+    margin: 0;
+    padding: 50px 50px;
+    }
+
+  header {
+        background-color: #062928;
+        text-align: center;
+        padding-left: 150px;
+        border-radius: 50px;
+        border-style: solid;
+        }
+
+  
+
+
+.container {
+            color: #f9f2f2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 150;
+            
+            
+        }
+
+
+.name{
+  position: relative;
+  left:50px;
+}
+       
+
+
+ nav ul {
+         
+            border-radius: 60px;
+            border-color: aliceblue;
+        }
+ nav li {
+        
+            display: inline;
+            margin-left: 15px;
+
+        }
+        
+
+nav a {
+    padding: 10px 20px; 
+    position: relative;
+    left: 100px;
+    border-radius: 50px;
+    background-color:rgb(134, 244, 248);
+    color: #0b0b0b;
+    transition: 0.3s;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav a:hover{
+  background-color: rgb(0, 183, 255);
+  color:#0b0b0b
+}
+
+
+
+.logo{ 
+  
+            position:absolute; 
+            top:30px; 
+            left:40px;  
+           
+        } 
+
+img{
+  width:130px;
+  height:130px;
+  border-radius: 50%;
+  border-style: solid;
+}
+
+.form-box{
+    width:200px;
+    height:400px;
+    background-color: #0a4862;
+    padding:180px 0 0px 180px;
+    width: 1200px;
+    border-radius: 50px;
+    position: relative;
+    top:40px;
+    left: 20px;
+}
+
+.forms{
+    position: relative;
+    right: 80px;
+    bottom: 125;
+}
+
+.forms label{
+    margin-bottom: 30px;
+    font-size: large;
+    color:aqua;
+}
+
+.forms input{
+    margin-bottom: 60px;
+   
+}
+
+.forms #fname{
+    height:40px;
+    width:40%;  
+}
+.forms #type{
+    height:40px;
+    margin-bottom: 60px;  
+}
+.forms #job{
+    height:120px;
+    width:50%;
+    position: relative;
+    top:30px;
+    resize: none;
+}
+
+
+#sub_btn{
+    background-color: rgb(5, 215, 194);
+    padding: 10px 30px;
+    border-radius: 60px;
+    position: relative;
+    cursor: pointer;
+    right: -190px;
+    border: none;
+    transition: .3s;
+    top: -70px;
+}
+#sub_btn:hover{
+    background-color: chartreuse;
+}
+
+.location{
+    width:500px;
+    position: relative;
+    left: 800px;
+    bottom: 570px;
+    font-size:xx-large;
+    color:aqua;
+}
+
+.map{
+    width: 500px;
+    height:520px;
+    position: relative;
+    left: 750px;
+    bottom: 600px;
+    border: transparent;
+}
+
+
+h6 {
+    position: relative;
+    left: 100px;
+}
+
+.Popup{
+    background-color: #0a4862;
+    width: 400;
+    height: 150;
+    border-style: solid;
+    position: absolute;
+    bottom: 200px;
+    right: 550px;
+    border-radius: 60px;
+    opacity: 95%;
+}
+
+.Popup h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+    padding-top: 35px;
+    padding-left: 75px;
+    opacity: 200%;
+    font-weight: bold;
+}
+.Popup #Ok_But{
+    background-color: rgb(5, 215, 194);
+    padding: 5px 20px;
+    border-radius: 60px;
+    position: relative;
+    cursor: pointer;
+    right: -170px;
+    border: solid;
+    transition: .3s;
+    top: -10px;
+}
+
+.Popup #Ok_But:hover{
+    background-color: rgba(128, 255, 0, 0.756);
+}
+
+.container h1{
+    animation-name: title;
+    animation-duration: 4s;
+    
+  
+  }
+  @keyframes title{
+    from {color:#00659f;}
+    to {color: rgb(255, 255, 255);}
+  }

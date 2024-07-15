@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Location Picker</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  #map {
+    width: 100%;
+    height: 400px;
+  }
+  p{
+    color: aqua;
+    font-family: monospace;
+    border-style: double;
+    padding: 3px;
+    border-color: black;
+    width: 150px;
+    right: 100px;
+  }
+  #but{
+    background-color: rgb(5, 215, 194);
+    padding: 5px 20px;
+    border-radius: 60px;
+    position: relative;
+    cursor: pointer;
+    top: -60px;
+    left: 250px;
+  }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<p>Latitude: <span id="latitude"></span></p>
+<p>Longitude: <span id="longitude"></span></p>
+<button id="but">Set Coordinates</button>
+<script src="inpMaps_script.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCQq0dqZbxfR0cpxpeNLKJWEKceMjHLhw&callback=initMap" async defer></script>
+</body>
+</html>

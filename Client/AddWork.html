@@ -1,0 +1,62 @@
+<html>
+<head>
+    <link rel="stylesheet" href="AddWork_style.css">
+    <title>ResLocate</title>
+</head>
+<body style="background-color:darkcyan;">
+    <header>
+        <div class="container">
+            <h1 class="name">ResLocate</h1>
+            <nav>
+                <ul>
+                    <li><a href="http://localhost:5000/Contributors_page">Back</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="logo" >
+            <img src="./logo.png" usemap="#workmap" >
+            <map name="workmap">
+                <area shape="default" href="http://localhost:5000/home">
+            </map>
+        </div>
+    </header>
+    <form class="form-box">
+        <div class="forms">
+            <label for="fname"><b>Title:</b></label><br>
+            <input type="text" id="fname" name="title" required><br>
+
+            <label for="date"><b>Date:</b></label><br>
+            <input type="text" id="dateInp" name="date" required><br>
+
+            <label for="time"><b>Time:</b></label><br>
+            <input type="text" id="timeInp" name="time" required><br>
+ 
+            <label for="description"><b>Description:</b></label><br>
+            <textarea id="description" name="description" rows="5" cols="50" required></textarea>
+            <div class="up-button">
+                <label for="image" id="btn-t"><b class="imgLbl">Image:</b></label><br>
+                <input type="file" class="imgbut" accept="image/*" required/>
+            </div>
+        </div>
+        <button type="submit" id="sub_btn"><b>Submit</b></button>
+    </form>     
+        <div class="location">
+            <h6>SELECT LOCATION</h6>
+        </div>
+        <iframe class="map" src="Inp_Map.html"></iframe>
+    </div>
+    <script src="AddWork_script.js"></script>
+    
+    <div class="Popup" hidden>
+        <h1>Data Inserted!</h1>
+        <button id="Ok_But" class="okb"><b>👍</b></button>
+        <script>
+            let okb=document.querySelector(".okb");
+            console.log(okb);
+            okb.addEventListener('click',()=>{
+                window.location.href = "http://localhost:5000/Contributors_page";
+            })
+        </script>
+    </div>
+</body>
+</html>

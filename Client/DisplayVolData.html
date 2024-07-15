@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic JSON Display</title>
+  <style>
+    h2#popupTitle {
+    color: white;
+    text-align: center;
+    }
+    p#popupDateTime {
+    color: white;
+    }
+    p#popupDescription {
+    color: white;
+    }
+    img#popupImg {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    img{
+      position: relative;
+      width: 200px;
+      height: 200px;
+      border-radius: 10px;
+      border-style: solid;
+      border-width: 2px;
+    }
+    .card {
+      border: 1px solid #02143a;
+      border-radius: 5px;
+      margin: 10px;
+      padding: 10px;
+      width: 250px;
+      height: 350px;
+      text-align: center;
+      background-color: rgb(134, 244, 248);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      cursor: pointer; /* Add cursor pointer */
+      opacity: 85%;
+    }
+    img.\popupdir {
+    position: relative;
+    width: 30px;
+    height: auto;
+    border-style: none;
+    }
+    .popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #062928;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 9999;
+      display: none; /* Hide initially */
+      animation: fadeIn 0.5s ease-in-out; /* Fade in animation */
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    #closeBtn {
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: white;
+      font-family: math;
+    }
+    p{
+      text-align: left;
+    }
+  </style>
+</head>
+<body style="background-color:#0a4862">
+
+<div class="container" id="container">
+  
+</div>
+
+<div class="popup" id="popup">
+  <span id="closeBtn">&times;</span>
+  <h2 id="popupTitle"></h2>
+  <img id="popupImg" style="max-width: 100%;">
+  <p id="popupDateTime"></p>
+  <p id="popupDescription"></p>
+  <a class="dirLink" target="_blank"><img class="popupdir" src="dir.svg"></a>
+</div>
+
+<script src="DisplayWork.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<html>
+<head>
+    <link rel="stylesheet" href="find_res_style.css">
+    <title>ResLocate</title>
+</head>
+<body style="background-color:darkcyan;">
+    <header>
+        <div class="container">
+            <h1 class="name">ResLocate</h1>
+            <nav>
+                <ul>
+                    <li><a href="http://localhost:5000/learn">Learn</a></li>
+                    <li><a href="http://localhost:5000/aboutUs">About Us</a></li>
+                    <li><a><button class="login_but">Login</button></a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <div class="logo" >
+            <img id="l" src="./logo.png" usemap="#workmap" >
+            <map name="workmap">
+                <area shape="default" href="http://localhost:5000/home">
+            </map>
+        </div>
+    </header>
+
+    <iframe class="gmaps" src="GoogleMaps.html" ></iframe>
+    <footer>
+        <div class="container1">
+            <div class="footer-left">
+                <img id="footer-logo" src="./logo.png" alt="Logo">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li id="contact"><b>Contact</b>
+                        <ul>
+                            <li>Phone: +91 7412589632</li>
+                            <li>Email: mail@ResLocate.in</li>
+                            <li><a id="contri-link" href="https://docs.google.com/forms/d/e/1FAIpQLSevGwMErB9sGiPtax7SKSB7_2nT2jDhaxjnitWlwZ3hJJbZcg/viewform">Become a Contributor</a></li>
+                        </ul>
+                    </li>
+                    <li id="about us"><b>About Us</b>
+                        <ul>
+                            <li>About Us</li>
+                            <li>Privacy Policy</li>
+                            <li>Terms and Conditions</li>
+                        </ul>
+                    </li>
+                    <li id="Account"><b>Account</b>
+                        <ul>
+                            <li>Login</li>
+                            <li>Help</li> 
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+<script>
+    let login_but=document.querySelector(".login_but");
+    let is_logged_in=0;
+
+    fetch("/check").then(response => response.json()).then(log => {
+    if(log.log==1){
+        is_logged_in=1;
+        login_but.textContent="Profile";
+    }
+    })
+
+    login_but.addEventListener("click",()=>{
+    if(is_logged_in==0){
+        window.location.href = "http://localhost:5000/login.html";
+    }
+    else{
+        window.location.href = "http://localhost:5000/Contributors_page";
+    }
+    })
+</script>
+</body>
+</html>

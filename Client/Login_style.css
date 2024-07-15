@@ -1,0 +1,264 @@
+/* Bordered form */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: medium;
+    margin: 0;
+    padding: 50px 50px;
+    background-color: darkcyan;
+    }
+
+  header {
+        background-color: #062928;
+        text-align: center;
+        padding-left: 150;
+        border-radius: 50px;
+        border-style: solid;
+        }
+
+.container h1{
+  animation-name: title;
+  animation-duration: 4s;
+  
+
+}
+@keyframes title{
+  from {color:#00659f;}
+  to {color: rgb(255, 255, 255);}
+}
+.container {
+            color: #f9f2f2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 150;
+            
+            
+        }
+        .name{
+          position: relative;
+          left:50px;
+        }
+               
+
+ nav ul {
+         
+            border-radius: 60px;
+            border-color: aliceblue;
+        }
+ nav li {
+        
+            display: inline;
+            margin-left: -15px;
+
+        }
+        
+
+nav a {
+    padding: 10px 20px; 
+    position: relative;
+    left: 100px;
+    border-radius: 50px;
+    background-color:rgb(134, 244, 248);
+    color: #0b0b0b;
+    transition: 0.3s;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav a:hover{
+  background-color: rgb(0, 183, 255);
+  color:#0b0b0b
+}
+
+
+.logo{ 
+  
+    position:absolute; 
+    top:30px; 
+    left:40px;  
+   
+} 
+
+#l{
+width:130px;
+height:130px;
+border-radius: 50%;
+border-style: solid;
+}
+
+
+
+
+.hero{
+  height:100%;
+  width:100%;
+  background-position: center ;
+  background-size: cover;
+  position: absolute;
+}
+
+.form-box{
+  width:380px;
+  height:450px;
+  position: relative;
+  margin: 6% auto;
+  bottom: 30px;
+  right:50px;
+  background:rgb(134, 244, 248);
+  padding:5px;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow:0 0 10px 9px #0000001f; 
+}
+
+
+
+.toggle-btn{
+  position: relative;
+  top:50px;
+  text-align: center;
+}
+
+
+
+.input{
+  top:130px;
+  position:absolute;
+  width: 280px;
+  transition: .5s;
+  
+}
+
+
+.input-field{
+  width:100%;
+  padding:10px;
+  margin:5px 0;
+  border-left:0;
+  border-right:0;
+  border-top:0px ;
+  border-bottom:1px solid black;
+  outline:none;
+  background: transparent;
+  transition: 0.5s ease-in-out
+}
+
+::placeholder{
+  color:black;
+}
+.sumbit-btn{
+  width:40%;
+  padding:10px 60px ;
+  position: relative;
+  top:250px;
+  cursor:pointer;
+  display:block;
+  margin:auto;
+  background-color: rgb(9, 96, 93);
+  color:white;
+  border:0;
+  outline:none;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+.sumbit-btn:hover{
+    background: linear-gradient(to right,rgb(8, 227, 230),yellow);
+    color:black;
+}
+
+.username{
+  font-size:x-small;
+  position: relative;
+  top:10px;
+  color:rgb(37, 33, 33);
+  cursor:text;
+  font-weight: bold;
+}
+
+
+
+#login{
+  left:50px;
+}
+
+footer {
+  background-color: #062928;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 30px;
+  position: relative;
+  top:550px;
+}
+
+
+.container1{
+  color: #f9f2f2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 150;
+}
+#footer-logo {
+  width:200px;
+  height:200px;
+  position: relative;
+  right:50px;/* Adjust the width as needed */
+}
+
+.footer-links {
+  position: relative;
+  right:100px;
+ 
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 5px 30px;
+  position: relative;
+  right:15px;
+}
+
+li b{
+  font-size: x-large;
+  position: relative;
+}
+
+/* Nested list styles */
+.footer-links ul {
+  text-align: left;
+}
+
+.footer-links ul ul {
+  margin-top: 10px;
+}
+
+.footer-links ul ul li {
+  display: block;
+  margin: 10px 30px 0px 20px;
+}
+
+#contact{
+  position: relative;
+  bottom: 0;
+}
+#account{
+  position: relative;
+  bottom: 35px;;
+}
+
+.auth_fail{
+  color:red;
+  position: relative;
+  top: 260;
+}

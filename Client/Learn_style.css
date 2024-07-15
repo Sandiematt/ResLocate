@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: medium;
+    margin: 0;
+    padding: 50px 50px;
+    height:1450;
+    }
+
+  header {
+        background-color: #062928;
+        text-align: center;
+        padding-left: 150;
+        border-radius: 50px;
+        border-style: solid;
+        }
+
+
+.container {
+            color: #f9f2f2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1500px;
+            margin: 0 150;
+            
+            
+        }
+        .name{
+          position: relative;
+          left:15px;
+        }
+ nav ul {
+         
+            border-radius: 60px;
+            border-color: aliceblue;
+        }
+ nav li {
+        
+            display: inline;
+            margin-left: -15px;
+
+        }
+        
+
+nav a {
+    padding: 10px 20px; 
+    position: relative;
+    left: 100px;
+    border-radius: 50px;
+    background-color:rgb(134, 244, 248);
+    color: #0b0b0b;
+    transition: 0.3s;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav a:hover{
+  background-color: rgb(0, 183, 255);
+  color:#0b0b0b
+}
+
+
+.logo{ 
+  
+    position:absolute; 
+    top:30px; 
+    left:40px;  
+   
+} 
+
+#l{
+width:130px;
+height:130px;
+border-radius: 50%;
+border-style: solid;
+}
+
+#information{
+  height: 450px;
+  width:600px;
+  position:absolute ;
+  left:850px;
+  top:450px;
+  border-radius: 30px;
+  box-shadow:0 0 10px 9px #0000001f;
+}
+
+.fade-in-out {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+#learn{
+    
+    font-size:90px;
+    position: relative;
+    left:960px;
+    top:100px;
+    color:#062928;
+    
+
+}
+
+
+
+footer {
+  background-color: #062928;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 30px;
+  position: relative;
+  top:250px;
+  
+}
+
+
+.container1{
+  color: #f9f2f2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1300px;
+            margin: 0 220;
+            
+}
+#footer-logo {
+  width:200px;
+  height:200px;
+  position: relative;
+  right:150px;/* Adjust the width as needed */
+  border-radius: 30px;
+}
+
+#contri-link{
+  color:white;
+  text-decoration: none;
+}
+
+.footer-links {
+  position: relative;
+  right:30px;
+ 
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 5px 30px;
+  position: relative;
+  right:15px;
+}
+
+li b{
+  font-size: x-large;
+  position: relative;
+}
+
+/* Nested list styles */
+.footer-links ul {
+  text-align: left;
+}
+
+.footer-links ul ul {
+  margin-top: 10px;
+}
+
+.footer-links ul ul li {
+  display: block;
+  margin: 10px 30px 0px 20px;
+}
+
+#account{
+  position: relative;
+  bottom: 35px;;
+}
+
+.accordion {
+  background-color: rgb(134, 244, 248);
+  color: #444;
+  cursor: pointer;
+  padding: 15px;
+  width: 50%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.container h1{
+  animation-name: title;
+  animation-duration: 4s;
+  
+
+}
+@keyframes title{
+  from {color:#00659f;}
+  to {color: rgb(255, 255, 255);}
+}
+.active, .accordion:hover {
+  background-color: #00a5fe; 
+  color:#0b0b0b;
+}
+
+.panel {
+  width:50%;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  bottom:15px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  
+}
+#text{ 
+  width:100%;
+  margin-left: 0px;
+  margin-top: 100px;
+  position: relative;
+  left:5px;
+  bottom:60px;
+  
+}
+
+.accordion1{
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+}
+
+.accordion::after {
+  content: '\25BC'; /* Unicode character for down arrow */
+  font-size: 20px;
+  float: right;
+  
+}
+
+.active::after {
+  content: '\25B2'; /* Unicode character for up arrow */
+}

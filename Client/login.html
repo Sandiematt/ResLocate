@@ -1,0 +1,78 @@
+<html>
+<head>
+    <link rel="stylesheet" href="Login_style.css">
+    <title>ResLocate</title>
+</head>
+<body style="background-color:darkcyan;">
+    <header>
+        <div class="container">
+            <h1 class="name">ResLocate</h1>
+            <nav>
+                <ul>
+                    <li><a href="http://localhost:5000/learn">Learn</a></li>
+                    <li><a href="http://localhost:5000/aboutUs">About Us</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <div class="logo" >
+            <img id="l" src="./logo.png" usemap="#workmap" >
+            <map name="workmap">
+                <area shape="default" href="http://localhost:5000/home">
+            </map>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <h2 type="button" class="toggle-btn" ><b>Login</b></h2>
+            </div>
+           
+            <form  id="login" class="input">
+                <label for="text" class="username" >Username</label>
+                <input type="text" class="input-field" id="name_inp" placeholder="John_Doe" required>
+                <label for="password" class="username" >Password</label>
+                <input type="password" class="input-field" id= "pass_inp" placeholder="Password" required>
+            </form>
+            <button  type ="submit" class="sumbit-btn" id="submit"><b>Login</b></button>
+            <center><h3 hidden class="auth_fail">Invalid Username Or Password !</h3></center>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container1">
+            <div class="footer-left">
+                <img id="footer-logo" src="./logo.png" alt="Logo">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li id="contact"><b>Contact</b>
+                        <ul>
+                            <li>Phone: +91 7412589632</li>
+                            <li>Email: mail@ResLocate.in</li>
+                            <li><a id="contri-link" href="https://docs.google.com/forms/d/e/1FAIpQLSevGwMErB9sGiPtax7SKSB7_2nT2jDhaxjnitWlwZ3hJJbZcg/viewform">Become a Contributor</a></li>
+                        </ul>
+                    </li>
+                    <li id="about us"><b>About Us</b>
+                        <ul>
+                            <li>About Us</li>
+                            <li>Privacy Policy</li>
+                            <li>Terms and Conditions</li>
+                        </ul>
+                    </li>
+                    <li id="Account"><b>Account</b>
+                        <ul>
+                            <li>Login</li>
+                            <li>Help</li>
+                           
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="Login_script.js"></script>
+</body>
+</html>

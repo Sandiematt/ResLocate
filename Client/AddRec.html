@@ -1,0 +1,56 @@
+<html>
+<head>
+    <link rel="stylesheet" href="AddRec_style.css">
+    <title>ResLocate</title>
+</head>
+<body style="background-color:darkcyan;">
+    <header>
+        <div class="container">
+            <h1 class="name">ResLocate</h1>
+            <nav>
+                <ul>
+                    <li><a href="http://localhost:5000/Contributors_page">Back</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="logo" >
+            <img src="./logo.png" usemap="#workmap" >
+            <map name="workmap">
+                <area shape="default" href="http://localhost:5000/home">
+            </map>
+        </div>
+    </header>
+    <form class="form-box">
+        <div class="forms">
+            <label for="fname"><b>Title:</b></label><br>
+            <input type="text" id="fname" name="title" required><br>
+            <label for="type"><b>Type:</b></label><br>
+            <select id="type" name="type" required>
+                <option value="0">Clean Water</option>
+                <option value="1">Food Resources</option>
+            </select><br>
+            <label for="description"><b>Resources Description:</b></label><br>
+            <textarea id="description" name="description" rows="5" cols="50" required></textarea>
+        </div>
+        <button type="submit" id="sub_btn"><b>Submit</b></button>
+    </form>     
+        <div class="location">
+            <h6>SELECT LOCATION</h6>
+        </div>
+        <iframe class="map" src="Inp_Map.html"></iframe>
+    </div>
+    <script src="AddRec_script.js"></script>
+    
+    <div class="Popup" hidden>
+        <h1>Data Inserted!</h1>
+        <button id="Ok_But" class="okb"><b>👍</b></button>
+        <script>
+            let okb=document.querySelector(".okb");
+            console.log(okb);
+            okb.addEventListener('click',()=>{
+                window.location.href = "http://localhost:5000/Contributors_page";
+            })
+        </script>
+    </div>
+</body>
+</html>

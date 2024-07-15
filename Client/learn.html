@@ -1,0 +1,158 @@
+<html>
+<head>
+    <link rel="stylesheet" href="Learn_style.css">
+    <title>ResLocate</title>
+    
+</head>
+<body style="background-color:darkcyan;">
+    <header>
+        <div class="container">
+            <h1 class="name">ResLocate</h1>
+            <nav>
+                <ul>
+                    <li><a href="http://localhost:5000/aboutUs">About Us</a></li>
+                    <li><a href="http://localhost:5000/login.html">Login</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <div class="logo" >
+            <img id="l" src="./logo.png" usemap="#workmap" >
+            <map name="workmap">
+                <area shape="default" href="http://localhost:5000/home">
+            </map>
+        </div>
+    </header>
+
+
+    <h4 id ="learn" style="width: 141.3;height: 0.0;margin-top: 10px;">LEARN</h4>
+      
+    <div class="accordion1">
+        <button class="accordion">1.How can bacteria be removed from water?</button>
+        <div class="panel">
+          <p id="text">Bacteria and other microorganisms are removed from water through disinfection.
+             This means that certain substances are added to kill the bacteria, these are called biocides. 
+             Sometimes disinfection can also be done with UV-light.</p>
+        </div>
+        
+        <button class="accordion">2.What is the difference between salt water and freshwater?</button>
+        <div class="panel">
+          <p id="text">Salt water is water that contains a certain amount of salts. This means that its conductivity is higher and its taste much saltier when one drinks it. Salt water is not suited to be used as drinking water, because salt drains water from human bodies.Freshwater is water with a dissolved salt concentration of less than 1%. There are two kinds of freshwater reservoirs: standing bodies of freshwater, such as lakes, ponds and inland wetlands and floating bodies of freshwater, such as streams and rivers.</p>
+        </div>
+        
+        <button class="accordion">3. What does the ‘best before’ date mean?</button>
+        <div class="panel">
+          <p id="text">Best before dates often apply to how much is the shelf life of foods and usually relate to the quality of the food rather than the safety. It is common practice to not consume the food beyond its best before date because the food will have reduced in quality</p>
+        </div>
+
+        <button class="accordion">4.How are you making sure that the food and water you provide is clean ?</button>
+        <div class="panel">
+          <p id="text">We have our contributors who will be going to each location and taking required precautionary measures to ensure safety. Once this is complete the data about the location is inserted into the website. </p>
+        </div>
+
+        <button class="accordion">How to wash hands efficiently?</button>
+        <div class="panel">
+          <p id="text">Wet your hands with clean, running water (warm or cold), turn off the tap, and apply soap. Lather your hands by rubbing them together with the soap. Lather the backs of your hands, between your fingers, and under your nails. Scrub your hands for at least 20 seconds.</p>
+        </div>
+        <button class="accordion">6.What type of health issues can be related to water quality?</button>
+        <div class="panel">
+          <p id="text">Contaminants in our water can lead to health issues, including gastrointestinal illness, reproductive problems, and neurological disorders. Infants, young children, pregnant women, the elderly, and people with weakened immune systems may be at increased risk for becoming sick after drinking contaminated water.</p>
+        </div>
+        <button class="accordion">7.Is Hard Water Safe? Should I Get A Water Softner?</button>
+        <div class="panel">
+          <p id="text">Hard water is water with a high mineral content, especially calcium and magnesium. In general, hard water is not dangerous, but can cause scaling (which occurs when minerals form a deposit and can clog pipes and water heaters). Hard water does not lather well, which can cause laundry and bathing issues</p>
+        </div>
+        <button class="accordion">8.Should I wash my produce with soap and water? </button>
+        <div class="panel">
+          <p id="text">Consumers should not wash fruits and vegetables with detergent or soap according to the USDA. These cleaning products are not approved or labelled for use on foods. One could ingest residues from soap or detergent absorbed on the produce.  Wash fresh produce under cool, running water and use a vegetable brush for the less delicate produce (potatoes, carrots, etc.)</p>
+        </div>
+        <button class="accordion">9.How can I ensure the water I'm drinking is safe and clean?</button>
+        <div class="panel">
+          <p id="text">Ensuring the safety of drinking water involves regular water quality testing, using water purification methods such as filtration or boiling, and being aware of potential contaminants. </p>
+        </div>
+        <button class="accordion">10.Why is it important to address food waste, and how can I reduce it at home?</button>
+        <div class="panel">
+          <p id="text">Addressing food waste is crucial for environmental sustainability and reducing the <br>strain on resources. To reduce food waste at home, plan meals, store food properly, use leftovers creatively, and be mindful of expiration dates. These practices not only minimize waste but also save money</p>
+        </div>
+
+        <div>
+            <img id="information" class="fade-in-out" src="./information.jpg">
+        </div>
+
+    </div>
+
+
+
+<footer>
+    <div class="container1">
+        <div class="footer-left">
+            <img id="footer-logo" src="./logo.png" alt="Logo">
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li id="contact"><b>Contact</b>
+                    <ul>
+                        <li>Phone: +91 7412589632</li>
+                        <li>Email: mail@ResLocate.in</li>
+                        <li><a id="contri-link" href="https://docs.google.com/forms/d/e/1FAIpQLSevGwMErB9sGiPtax7SKSB7_2nT2jDhaxjnitWlwZ3hJJbZcg/viewform">Become a Contributor</a></li>
+                    </ul>
+                </li>
+                <li id="about us"><b>About Us</b>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms and Conditions</li>
+                    </ul>
+                </li>
+                <li id="Account"><b>Account</b>
+                    <ul>
+                        <li>Login</li>
+                        <li>Help</li>
+                       
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+      
+      
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+var imageIndex = 0;
+var images = ["cleanwater.jpg", "healthy food.png","information.jpg","wash hands.jpg","water treatment.png"]; // Add your image paths here
+var imageElement = document.getElementById("information");
+
+function changeImage() {
+  imageElement.style.opacity = 0; // Set opacity to 0 for a fade-out effect
+  setTimeout(function() {
+    imageElement.src = images[imageIndex];
+    imageElement.style.opacity = 1; // Set opacity back to 1 for a fade-in effect
+  }, 1000); // Change this timeout to match your transition duration
+  imageIndex = (imageIndex + 1) % images.length;
+}
+
+setInterval(changeImage, 5000); // Change image every 4 seconds (including fade duration)
+</script>   
+
+</body>
+</html>
